@@ -1,0 +1,230 @@
+/* CSS RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid grey;
+}
+
+
+/* General Styles */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: #fffafa;
+    color: #4f4f4f;
+    font-family: "PT Sans", sans-serif;
+}
+h1, h2, h3 {
+    font-family: Nunito, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+a {
+    color: #4f4f4f;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: 2s;
+}
+a:hover {
+    color: #fcb130;
+}
+i {
+    font-size: 5rem; /* these are the icons */
+}
+section, footer {
+    padding: 4% 0;
+}
+
+
+/* Header Section Styles */
+nav.main {
+    padding: 2% 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* white w/ slightly translucent */
+}
+.logo {
+    width: 8%;
+    text-align: center;
+}
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Top Section Styles */
+#top {
+    height: 95vh;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 6.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Farm Section Styles */
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.box {
+    width: 20%;
+    padding: 4%;
+    border: 3px solid black;
+    background-color: #fff;
+    text-align: center;
+    margin: 5% 0;
+}
+
+
+/* Empty Section with Background image */
+.empty {
+    background-image: url('../images/dirt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* makes it look like it is staying in one place and we are scrolling over it */
+    height: 40vh;
+}
+
+
+/* About Section Styles - two ways to go about this: use flex on #about, or style .text. Below, we use second option */
+.text {
+    width: 60%;
+    border: 3px solid black;
+     background-color: white;
+     text-align: center;
+     margin: 0 auto; /* 0 margin on top and bottom, automatically apply equal margins to left and right */
+     padding: 4%;
+}
+
+
+/* Gallery Section Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* break to a new line */
+    justify-content: space-around;
+}
+.gal-img {
+    width: 45%; /* push two on each line */
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5% 0;
+    display: flex;
+    align-items: flex-end;
+}
+.hide {
+    background-color: #fff;
+    width: 30%;
+    height: 10vh;
+    display: none; /* disappears text and makes it appear on hover, display flex below on .gal-img:hover .hide */
+}
+.gal-img:hover .hide {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.farm {
+    background-image: url('../images/barn.jpg');
+}
+.cook {
+    background-image: url('../images/cook.jpg');
+}
+.veg {
+    background-image: url('../images/produce.jpg');
+}
+.animal {
+    background-image: url('../images/sheep.jpg');
+}
+
+
+/* Contact Section Styles */
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact h2 {
+    width: 100%;
+}
+.left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0%;
+}
+.left div {
+    width: 50%;
+    line-height: 2;
+}
+.right div {
+    width: 50%;
+}
+.left h3 {
+    text-align: left;
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #fcb130;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    width: 30%;
+}
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.footernav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footernav a {
+    margin: 2% 0;
+}
+footer a {
+    color: #fff;
+    transition: 2s;
+}
+footer a:hover {
+    color: #4f4f4f;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
